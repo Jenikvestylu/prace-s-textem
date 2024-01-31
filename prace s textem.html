@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prace s textem.css">
+    <title>Práce s textem</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Textová Aplikace</h1>
+        
+        <label for="textInput">Zadejte textový řetězec:</label>
+        <textarea id="textInput" rows="4" cols="50"></textarea>
+
+        <button onclick="reverseString()">Reverze řetězce</button>
+        <button onclick="splitIntoLetters()">Rozdělení na slova</button>
+
+        <label for="wordInput">Zadejte slovo pro počet výskytů:</label>
+        <input type="text" id="wordInput">
+        <button onclick="countWordOccurrences()">Počet výskytů slova</button>
+
+        <label for="replaceInput">Nahradit písmeno nebo slovo:</label>
+        <input type="text" id="replaceInput">
+        <button onclick="replaceCharacters()">Změna písmen</button>
+
+        <label for="searchInput">Hledaný text:</label>
+        <input type="text" id="searchInput">
+        <button onclick="findTextPositions()">Hledání textu</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="prace s textem.js"></script>
+</body>
+</html>
